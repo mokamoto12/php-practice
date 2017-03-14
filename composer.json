@@ -1,0 +1,30 @@
+{
+    "name": "mokamoto12/gift-card",
+    "require": {
+        "myclabs/php-enum": "^1.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "authors": [
+        {
+            "name": "mokamoto12",
+            "email": "okamoto_masahiro@aratana.jp"
+        }
+    ],
+    "scripts": {
+        "test": [
+            "phpunit"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "GiftCard\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\GiftCard\\": "test"
+        }
+    }
+}
