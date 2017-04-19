@@ -19,17 +19,17 @@ class UseTypeNotUseTest extends TestCase
      */
     private $useTypeNotUse;
 
-    function setUp()
+    public function setUp()
     {
         $this->useTypeNotUse = new UseTypeNotUse($this->_availableAmount, $this->_someUseAmount);
     }
 
-    function testInstanceOf()
+    public function testInstanceOf()
     {
         $this->assertTrue($this->useTypeNotUse instanceof UseTypeInterface);
     }
 
-    function testGetUseAmount()
+    public function testGetUseAmount()
     {
         $this->assertEquals($this->useTypeNotUse->getUseAmount(), 0);
     }

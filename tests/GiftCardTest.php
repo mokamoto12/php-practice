@@ -30,24 +30,24 @@ class GiftCardTest extends TestCase
      */
     private $giftCardUseAll;
 
-    function setUp()
+    public function setUp()
     {
         $this->giftCardNotUse = new GiftCard($this->typeNotUse, $this->availableAmount, $this->inputtedAmount);
         $this->giftCardSomeUse = new GiftCard($this->typeSomeUse, $this->availableAmount, $this->inputtedAmount);
         $this->giftCardUseAll = new GiftCard($this->typeUseAll, $this->availableAmount, $this->inputtedAmount);
     }
 
-    function testGetUseAmountNotUse()
+    public function testGetUseAmountNotUse()
     {
         $this->assertEquals($this->giftCardNotUse->getUseAmount(), 0);
     }
 
-    function testGetUseAmountSomeUse()
+    public function testGetUseAmountSomeUse()
     {
         $this->assertEquals($this->giftCardSomeUse->getUseAmount(), $this->inputtedAmount);
     }
 
-    function testGetUseAmountUseAll()
+    public function testGetUseAmountUseAll()
     {
         $this->assertEquals($this->giftCardUseAll->getUseAmount(), $this->availableAmount);
     }

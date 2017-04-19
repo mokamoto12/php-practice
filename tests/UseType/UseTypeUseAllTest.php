@@ -19,17 +19,17 @@ class UseTypeUseAllTest extends TestCase
      */
     private $useTypeUseAll;
 
-    function setUp()
+    public function setUp()
     {
         $this->useTypeUseAll = new UseTypeUseAll($this->_availableAmount, $this->_someUseAmount);
     }
 
-    function testInstanceOf()
+    public function testInstanceOf()
     {
         $this->assertTrue($this->useTypeUseAll instanceof UseTypeInterface);
     }
 
-    function testGetUseAmount()
+    public function testGetUseAmount()
     {
         $this->assertEquals($this->useTypeUseAll->getUseAmount(), $this->_availableAmount);
     }

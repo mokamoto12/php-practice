@@ -14,19 +14,19 @@ use GiftCard\UseType\UseTypeUseAll;
  */
 class UseTypeEnumTest extends TestCase
 {
-    function testCreateNotUse()
+    public function testCreateNotUse()
     {
         $enum = new UseTypeEnum(UseTypeEnum::NOT_USE);
         $this->assertTrue($enum->create(0, 0) instanceof UseTypeNotUse);
     }
 
-    function testCreateSomeUse()
+    public function testCreateSomeUse()
     {
         $enum = new UseTypeEnum(UseTypeEnum::SOME_USE);
         $this->assertTrue($enum->create(0, 0) instanceof UseTypeSomeUse);
     }
 
-    function testCreateUseAll()
+    public function testCreateUseAll()
     {
         $enum = new UseTypeEnum(UseTypeEnum::USE_ALL);
         $this->assertTrue($enum->create(0, 0) instanceof UseTypeUseAll);

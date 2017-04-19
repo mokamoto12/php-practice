@@ -19,17 +19,17 @@ class UseTypeSomeUseTest extends TestCase
      */
     private $useTypeSomeUse;
 
-    function setUp()
+    public function setUp()
     {
         $this->useTypeSomeUse = new UseTypeSomeUse($this->_availableAmount, $this->_someUseAmount);
     }
 
-    function testInstanceOf()
+    public function testInstanceOf()
     {
         $this->assertTrue($this->useTypeSomeUse instanceof UseTypeInterface);
     }
 
-    function testGetUseAmount()
+    public function testGetUseAmount()
     {
         $this->assertEquals($this->useTypeSomeUse->getUseAmount(), $this->_someUseAmount);
     }
