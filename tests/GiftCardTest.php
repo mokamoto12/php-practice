@@ -2,7 +2,6 @@
 
 namespace Tests\GiftCard;
 
-use GiftCard\UseType\UseTypeEnum;
 use \PHPUnit\Framework\TestCase;
 use GiftCard\GiftCard;
 
