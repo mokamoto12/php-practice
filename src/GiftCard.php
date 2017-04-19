@@ -24,7 +24,7 @@ class GiftCard
      */
     public function __construct($giftCardType, $availableAmount, $inputtedAmount)
     {
-        $useTypeEnum = new UseTypeEnum($giftCardType);
+        $useTypeEnum = UseTypeEnum::values()[$giftCardType];
         $this->useType = $useTypeEnum->create($availableAmount, $inputtedAmount);
     }
 

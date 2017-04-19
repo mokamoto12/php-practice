@@ -10,9 +10,9 @@ use MyCLabs\Enum\Enum;
  */
 class UseTypeEnum extends Enum
 {
-    const UseTypeUseAll = 1;
-    const UseTypeSomeUse = 2;
-    const UseTypeNotUse = 0;
+    const USE_ALL = UseTypeUseAll::class;
+    const SOME_USE = UseTypeSomeUse::class;
+    const NOT_USE = UseTypeNotUse::class;
 
     /**
      * Create UseType Instance
@@ -24,7 +24,7 @@ class UseTypeEnum extends Enum
      */
     public function create($availableAmount, $someUseAmount)
     {
-        $class = __NAMESPACE__ . '\\' . $this->getKey();
+        $class = $this->getValue();
         return new $class($availableAmount, $someUseAmount);
     }
 }

@@ -16,19 +16,19 @@ class UseTypeEnumTest extends TestCase
 {
     function testCreateNotUse()
     {
-        $enum = new UseTypeEnum(UseTypeEnum::UseTypeNotUse);
+        $enum = new UseTypeEnum(UseTypeEnum::NOT_USE);
         $this->assertTrue($enum->create(0, 0) instanceof UseTypeNotUse);
     }
 
     function testCreateSomeUse()
     {
-        $enum = new UseTypeEnum(UseTypeEnum::UseTypeSomeUse);
+        $enum = new UseTypeEnum(UseTypeEnum::SOME_USE);
         $this->assertTrue($enum->create(0, 0) instanceof UseTypeSomeUse);
     }
 
     function testCreateUseAll()
     {
-        $enum = new UseTypeEnum(UseTypeEnum::UseTypeUseAll);
+        $enum = new UseTypeEnum(UseTypeEnum::USE_ALL);
         $this->assertTrue($enum->create(0, 0) instanceof UseTypeUseAll);
     }
 }

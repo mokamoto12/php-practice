@@ -2,6 +2,7 @@
 
 namespace Tests\GiftCard;
 
+use GiftCard\UseType\UseTypeEnum;
 use \PHPUnit\Framework\TestCase;
 use GiftCard\GiftCard;
 
@@ -12,9 +13,9 @@ use GiftCard\GiftCard;
  */
 class GiftCardTest extends TestCase
 {
-    private $typeNotUse = 0;
-    private $typeSomeUse = 2;
-    private $typeUseAll = 1;
+    private $typeNotUse = 'NOT_USE';
+    private $typeSomeUse = 'SOME_USE';
+    private $typeUseAll = 'USE_ALL';
     private $availableAmount = 1000;
     private $inputtedAmount = 700;
     /**
