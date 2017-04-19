@@ -15,7 +15,7 @@ class UseTypeSomeUseTest extends TestCase
     private $_availableAmount = 1000;
     private $_someUseAmount = 700;
     /**
-     * @var UseTypeNotUse
+     * @var UseTypeSomeUse
      */
     private $useTypeSomeUse;
 
