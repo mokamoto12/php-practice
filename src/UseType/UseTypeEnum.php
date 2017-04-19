@@ -1,6 +1,7 @@
 <?php
 
 namespace GiftCard\UseType;
+
 use MyCLabs\Enum\Enum;
 
 /**

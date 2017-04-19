@@ -8,8 +8,8 @@ namespace GiftCard\UseType;
  */
 class UseTypeSomeUse implements UseTypeInterface
 {
-    private $_availableAmount;
-    private $_someUseAmount;
+    private $availableAmount;
+    private $someUseAmount;
 
     /**
      * UseTypeSomeUse constructor.
@@ -19,8 +19,8 @@ class UseTypeSomeUse implements UseTypeInterface
      */
     public function __construct($availableAmount, $someUseAmount)
     {
-        $this->_availableAmount = $availableAmount;
-        $this->_someUseAmount = $someUseAmount;
+        $this->availableAmount = $availableAmount;
+        $this->someUseAmount = $someUseAmount;
     }
 
     /**
@@ -30,6 +30,6 @@ class UseTypeSomeUse implements UseTypeInterface
      */
     public function getUseAmount()
     {
-        return $this->_someUseAmount;
+        return $this->someUseAmount;
     }
 }

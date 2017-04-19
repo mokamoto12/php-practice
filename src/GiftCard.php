@@ -1,6 +1,7 @@
 <?php
 
 namespace GiftCard;
+
 use GiftCard\UseType\UseTypeEnum;
 
 /**
