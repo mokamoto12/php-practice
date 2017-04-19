@@ -12,8 +12,8 @@ use GiftCard\UseType\UseTypeInterface;
  */
 class UseTypeUseAllTest extends TestCase
 {
-    private $_availableAmount = 1000;
-    private $_someUseAmount = 700;
+    private $availableAmount = 1000;
+    private $someUseAmount = 700;
     /**
      * @var UseTypeUseAll
      */
@@ -21,7 +21,7 @@ class UseTypeUseAllTest extends TestCase
 
     public function setUp()
     {
-        $this->useTypeUseAll = new UseTypeUseAll($this->_availableAmount, $this->_someUseAmount);
+        $this->useTypeUseAll = new UseTypeUseAll($this->availableAmount, $this->someUseAmount);
     }
 
     public function testInstanceOf()
@@ -31,6 +31,6 @@ class UseTypeUseAllTest extends TestCase
 
     public function testGetUseAmount()
     {
-        $this->assertEquals($this->useTypeUseAll->getUseAmount(), $this->_availableAmount);
+        $this->assertEquals($this->useTypeUseAll->getUseAmount(), $this->availableAmount);
     }
 }

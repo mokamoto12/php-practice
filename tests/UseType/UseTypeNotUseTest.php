@@ -12,8 +12,8 @@ use GiftCard\UseType\UseTypeInterface;
  */
 class UseTypeNotUseTest extends TestCase
 {
-    private $_availableAmount = 1000;
-    private $_someUseAmount = 700;
+    private $availableAmount = 1000;
+    private $someUseAmount = 700;
     /**
      * @var UseTypeNotUse
      */
@@ -21,7 +21,7 @@ class UseTypeNotUseTest extends TestCase
 
     public function setUp()
     {
-        $this->useTypeNotUse = new UseTypeNotUse($this->_availableAmount, $this->_someUseAmount);
+        $this->useTypeNotUse = new UseTypeNotUse($this->availableAmount, $this->someUseAmount);
     }
 
     public function testInstanceOf()
